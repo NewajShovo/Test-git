@@ -6,7 +6,7 @@ int P[N_];
 char S[N_];
 ///my name is shovo///
 int group[N_];
-
+////sss
 int Find(int x) {
 	if(group[x]==x) return x;
 	return group[x]=Find(group[x]);
