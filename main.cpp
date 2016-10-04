@@ -4,7 +4,7 @@ const int N_ = 1050;
 int N;
 int P[N_];
 char S[N_];
-
+///my name is shovo///
 int group[N_];
 
 int Find(int x) {
