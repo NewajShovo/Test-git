@@ -1,3 +1,2 @@
 #include <bits/stdc++.h> 
-using namespace std;
-int p[98][98];main(){int i,j,t,x;cin>>t;while(t--){cin>>x;for(i=0;i<x;i++){for(j=1;j<i;j++){cin>>p[i][j];}}for(i=x-2;i>=0;i--){for(j=i;j>=0;j--){p[i][j]=max((p[i+1][j]+p[i][j]),(p[i+1][j+1]+p[i][j]));}}cout<<p[0][0];}}
+int p[98][98];main(){int i,j,t,x;std::cin>>t;while(t--){std::cin>>x;for(i=0;i<x;i++){for(j=1;j<i;j++){std::cin>>p[i][j];}}for(i=x-2;i>=0;i--){for(j=i;j>=0;j--){p[i][j]=std::max((p[i+1][j]+p[i][j]),(p[i+1][j+1]+p[i][j]));}}std::cout<<p[0][0];}}
