@@ -1,3 +1,3 @@
-#include <bits/stdc++.h>
+#include <bits/stdc++.h> 
 using namespace std;
-int p[99][99];main(){int i,j,tc,x;cin>>tc;while(tc--){cin>>x;for(i=0;i<x;i++){for(j=1;j<i;j++){cin>>p[i][j];}}for(i=x-2;i>=0;i--){for(j=i;j>=0;j--){p[i][j]=max((p[i+1][j]+p[i][j]),(p[i+1][j+1]+p[i][j]));}}cout<<p[0][0];}}
+int p[99][99];main(){int i,j,t,x;cin>>t;while(t--){cin>>x;for(i=0;i<x;i++){for(j=1;j<i;j++){cin>>p[i][j];}}for(i=x-2;i>=0;i--){for(j=i;j>=0;j--){p[i][j]=max((p[i+1][j]+p[i][j]),(p[i+1][j+1]+p[i][j]));}}cout<<p[0][0];}}
